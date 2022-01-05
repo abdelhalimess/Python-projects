@@ -1,3 +1,4 @@
+# question number one:
 num_of_days = int(input("Entrer le nombre de jours : "))
 num_of_years = num_of_days // 365
 num_of_weeks = (num_of_days % 365) // 7
