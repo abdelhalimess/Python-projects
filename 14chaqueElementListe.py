@@ -1,3 +1,3 @@
 liste = [1,2,3,'Viva',"L'algerie",'!']
-for i in range (0,len(liste)):
+for i in range (len(liste)):
     print(liste[i],end="   ")

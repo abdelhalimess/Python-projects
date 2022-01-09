@@ -1,11 +1,11 @@
 num = input("Entrer le nombre: ")
-for i in range(0,len(num)):
+for i in range(len(num)):
     if (num[i] == "0"): 
         print("Zero",end=' ')
 
     elif (num[i] == "1"): 
         print("Un",end=' ')
-            
+
     elif (num[i] == "2"): 
         print("Deux",end=' ')
 
