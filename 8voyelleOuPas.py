@@ -1,4 +1,4 @@
-char = input("Entrer un alphabet: ")
+char = input("Enter letter: ")
 if str.lower(char) in ('aeiouy'):
     print("\nCet alphabet est une voyelle.\n")
 elif str.lower(char) in ('bcdfghjklmnpqrstvwxz'):

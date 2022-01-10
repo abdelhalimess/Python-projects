@@ -1,6 +1,6 @@
-num_1 = int(input("Entrer le premier nombre: "))
-num_2 = int(input("Entrer le deuxieme nombre: ")) 
-num_3 = int(input("Entrer le troisieme nombre: "))
+num_1 = int(input("Enter the first nombre: "))
+num_2 = int(input("Enter the second nombre: ")) 
+num_3 = int(input("Enter the third nombre: "))
 max = int
 if num_1 <= num_2:
     max = num_2 

@@ -1,7 +1,7 @@
 import math
-num = float(input("Entrer un nombre : "))
+num = float(input("Enter the number : "))
 
 if num >= 0 :
     square_root = math.sqrt(num) 
-    print("La racine caree de {0} = {1}".format(num,square_root))
-else: print("   ERREUR !") 
+    print("The square root of {0} = {1}".format(num,square_root))
+else: print("   ERROR !") 

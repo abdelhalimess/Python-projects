@@ -1,4 +1,4 @@
-num = int(input("Enter le nombre: "))
+num = int(input("Enter the number: "))
 
 if num % 3 == 0 and num % 13 == 0:
     print(" \nOui, ce nombre est divisible par 3 et 13.\n")

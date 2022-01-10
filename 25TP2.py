@@ -1,57 +1,54 @@
-# La taille de matrice 
-N=int(input ("Entrer le nombre de colones(lignes): "))
-m= N
-# Intialiser la taille des matrices
+# Size of matrix 
+N=int(input ("Enter the number of columns: "))
+m=int(input("Enter the number of lines: "))
+# Intialise dimensions
 A= [[0 for i in range(N)] for j in range(m)]
 X=[0]*m
 B=[0]*m
-# Entrer les elements de la matrice A
+# Enter the elements of A
 for i in range(m):
     for j in range(N):
-        A[i][j] = int(input("Entrer l'element A[{0}][{1}] : ".format(i, j)))
+        A[i][j] = int(input("Enter element A[{0}][{1}] : ".format(i, j)))
 
-# Affichage de la matrice A
-print("La matrice A =")
+# Display elements of the matrix A
+print("Matrix A =")
 for i in range (m) :
     for j in range(N):
         print("   ",A[i][j], end="")
     print()
-# Entrer les element de vecteur B 
+
+#Enter the elements of array B 
 for i in range(m):
-    B[i]=int(input("Entrer l'element {0} : ".format(i+1)))
+    B[i]=int(input("Enter element {0} : ".format(i+1)))
 for i in range(m):
     print(B[i],'\n ')
 
 # ----------- Triangularisation --------------
-for k in range(1,N) :
+for k in range(0,N) :
    for i in range(k+1,N):
        w=A[i][k]/A[k][k]
-       for j in range (1,N):
+       for j in range (0,N):
            
               A[i][j]=A[i][j]-w*A[k][j]  
        B[i]=B[i]-w*B[k]
 
-# Affichage de la matrice A
-print("La matrice A =")       
-for i in range (m) :
+for i in range (m):
     for j in range(N):
-        print("   ",A[i][j], end="")
-    print()
-# Affichage de le vecteur B
-print("Le vecteur B =")     
+        print("   ",A[i][j],end="")
+    print("")
 for i in range(m):
-    print("  ",B[i],'\n ')
+    print("  ",B[i],'\n ')         
+# ----------------- Resolution -------------------
 
-# --------------- Resolution ----------------
-
-# Calcul du vecteur X
 for i in range (m-1,-1,-1) :
-      s=0
+      S=0
       for j in range (i+1,m) :
-          s=s+A[i][j]*X[j]
-      X[i]=(B[i]-s) / A [i][i]
+          S=S+A[i][j]*X[j]
+      X[i]=(B[i]-S) / A [i][i]
 
-# Affichage du vecteur X
-print("La vecteur X =")        
+# Display X
+print("X = ")      
 for i in range(m):
     print("  ",X[i],'\n ')
+
+   

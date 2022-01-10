@@ -1,8 +1,8 @@
 import math
 print("\n      *EQUATION DU 2EME DEGRE [Ax² + Bx + C = 0]*\n")
-A = int(input("Entrer A: "))
-B = int(input("Entrer B: "))
-C = int(input("Entrer C: "))
+A = int(input("Enter A: "))
+B = int(input("Enter B: "))
+C = int(input("Enter C: "))
 delta = math.pow(B,2) - 4*(A*C)
 if delta < 0:
     print("\nIl n'y a pas de racine à cette equation.")
